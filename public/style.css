@@ -36,6 +36,9 @@
 .view-90{
   min-height: 90vh;
 }
+.view-70{
+  min-height: 70vh;
+}
 .center{
   display: grid;
   place-content: center;
@@ -46,6 +49,7 @@ html{
 body{
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
+  background-color: whitesmoke;
 }
 .main-nav ul a{
   text-decoration: none;
@@ -170,4 +174,29 @@ body{
   padding: 20px;
   background-color: #505050;
   color: white;
+}
+.about{
+  padding: 10px;
+  max-width: 800px;
+  color: #555555;
+}
+.about h1{
+  color: cornflowerblue;
+  margin-bottom: 20px;
+  font-size: clamp(2.4rem, 10vw, 3.6rem);
+}
+.about p{
+  font-size: 1.8rem;
+}
+.error-404{
+  padding: 10px;
+  color: #555555;
+  font-weight: bold;
+}
+.error-404 h1{
+  margin-bottom: 30px;
+  font-size: 4rem;
+}
+.error-404 p{
+  font-size: 1.8rem;
 }
