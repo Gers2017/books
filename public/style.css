@@ -1,0 +1,173 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar{
+  background-color: #cccccc;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #555555;
+}
+::-webkit-scrollbar-button{
+  background-color: #cccccc;
+}
+
+.main-header{
+  color: white;
+  background-color: cornflowerblue;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.main-header h1{
+  margin-bottom: 20px;
+}
+.main-nav ul{
+  display: flex;
+  justify-content: start;
+  background-color: cornflowerblue;
+}
+.main-nav ul a{
+  margin-right: 20px;
+}
+.main-nav ul a:last-child{
+  margin-right: 0;
+}
+.view-90{
+  min-height: 90vh;
+}
+.center{
+  display: grid;
+  place-content: center;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+}
+.main-nav ul a{
+  text-decoration: none;
+  color: white;
+  background-color: cornflowerblue;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px;
+  transition: color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.main-nav ul a:hover{
+  color: cornflowerblue;
+  background-color: white;
+}
+
+.book{
+  min-width: 350px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.33);
+  color: #505050;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transform: scale(1);
+  transition: transform 0.15s ease-in;
+}
+.book:hover{
+  z-index: 1;
+  transform: scale(1.1);
+}
+.book .title{
+  color: cornflowerblue;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #cccccc;
+}
+.book > p{
+  margin-bottom: 10px;
+}
+.book p:last-child{
+  margin-bottom: 0;
+}
+.author span, .pages span, .price span{
+  color: cornflowerblue;
+  font-weight: bold;
+}
+
+.btn{
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: fit-content;
+
+  border: 2px transparent solid;
+  color: white;
+  background-color: cornflowerblue;
+
+  transition: border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.btn.multi{
+  margin-right: 10px;
+}
+.btn.multi:last-child{
+  margin-right: 0px;
+}
+.btn a {
+  text-decoration: none;
+  color: inherit;
+}
+.btn:hover{
+  color: cornflowerblue;
+  background-color: transparent;
+  border: 2px cornflowerblue solid;
+}
+
+.form-parent header{
+  color: cornflowerblue;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px #cccccc solid;
+}
+.form header h2{
+  text-align: center;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+}
+.form .field{
+  margin-bottom: 15px;
+}
+.field label, .field input{
+  display: block;
+}
+.field label{
+  font-weight: bold;
+  color: cornflowerblue;
+  margin-bottom: 5px;
+  font-size: 1.6rem;
+}
+.field input:focus{
+  color: cornflowerblue;
+}
+.field input{
+  width: 100%;
+  font-size: 1.4rem;
+  color: #505050;
+  padding: 2.5px;
+  font-weight: bold;
+  border: 1.5px #505050 solid;
+  border-radius: 5px;
+}
+.main-footer{
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #505050;
+  color: white;
+}

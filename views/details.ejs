@@ -1,0 +1,13 @@
+<%- include('partials/head') %> 
+<body>
+  <%- include('partials/header') %>
+  <div class="center view-90">
+    <div class="book">
+      <h2 class="title"><%= book.title %></h2>
+      <p class="author"><span>Author:</span> <%= book.author %></p>
+      <p class="pages"><span>Pages:</span> <%= book.pages %></p>
+      <p class="price"><span>Price:</span> $<%= book.price %></p>
+    </div>
+  </div>
+</body>
+<%- include('partials/footer') %> 

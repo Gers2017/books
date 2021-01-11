@@ -1,0 +1,28 @@
+<%- include('partials/head') %>
+<body>
+  <%- include('partials/header') %> 
+  <div class="container">
+    <article class="center">
+      <% if(books.length > 0 || books) { %>
+        <% books.forEach(book => { %>
+          <div class="book">
+            <h2 class="title"><%= book.title %></h2>
+            <p class="author"><span>Author:</span> <%= book.author %></p>
+            <p class="pages"><span>Pages:</span> <%= book.pages %></p>
+            <p class="price"><span>Price:</span> $<%= book.price %></p>
+            <button class="btn multi" type="submit">
+              <a href="/books/<%= book._id %>">Show more</a>
+            </button>
+            <button class="btn multi">
+              <a data-doc="<%= book._id %>">Delete</a>
+            </button>
+          </div>
+        <% }) %>
+      <% } else { %>
+        <p>No books avalaible now</p>
+      <% } %> 
+    </article>
+  </div>
+  <%- include('partials/footer') %>
+  <script src="/books-delete.js" defer></script>
+</body>
