@@ -2,8 +2,7 @@
 ### Books it's a test project using Node.js, Express, Mongoose and Nodemon
 
 ## What is this project about
-**Books** it's a simple web application to show, create and delete books. Using mongoDB atlas to store the data and mongoose to manage the database.
-Express recive request and send responses in a clean way.
+**Books** it's a simple web application to show, create and delete books. Using mongoDB atlas to store the data and mongoose to manage the database and Express to recive requests and send responses.
 
 ![Book](/screenshots/books_ss.png)
 ![Create book](/screenshots/books_ss_2.png)

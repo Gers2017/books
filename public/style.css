@@ -19,6 +19,10 @@
   padding: 20px;
   margin-bottom: 20px;
 }
+.main-header a{
+  text-decoration: none;
+  color: white;
+}
 .main-header h1{
   margin-bottom: 20px;
 }
@@ -31,6 +35,18 @@
   margin-right: 20px;
 }
 .main-nav ul a:last-child{
+  margin-right: 0;
+}
+.flex-row{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-row > *{
+  margin-right: 20px;
+}
+.flex-row > *:last-child{
   margin-right: 0;
 }
 .view-90{
